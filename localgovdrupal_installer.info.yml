@@ -1,4 +1,4 @@
-name: LocalGov Drupal
+name: LocalGov Drupal Installer
 type: profile
 
 # Change this to whatever your minimum required version of core is, depending on the
