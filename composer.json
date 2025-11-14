@@ -1,12 +1,6 @@
 {
     "name": "millnut/localgovdrupal_installer",
     "type": "drupal-profile",
-    "repositories": {
-        "millnut": {
-            "type": "vcs",
-            "url": "https://github.com/millnut/localgovdrupal_starter"
-        }
-    },
     "require": {
         "drupal/recipe_installer_kit": "^1.0.0-alpha8",
         "millnut/localgovdrupal_starter": "dev-main"
