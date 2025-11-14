@@ -56,7 +56,16 @@ recipes:
 # Each item in this list can either be a string, which is the untranslated message
 # to suppress, or an array of two untranslated strings for pluralized messages which
 # have singular and plural forms.
-hide_messages: []
+hide_messages:
+  # If installed in a language other than English, don't show these confusing
+  # technical messages about how many translations were imported.
+  # @see locale_translate_batch_finished()
+  - ['One translation file imported. %number translations were added, %update translations were updated and %delete translations were removed.', '@count translation files imported. %number translations were added, %update translations were updated and %delete translations were removed.']
+  - 'The configuration was successfully updated. There are %number configuration objects updated.'
+
+  # This appears mid-install if you install in a non-English language, which is confusing.
+  - 'Check <a href=":translate_status">available translations</a> for your language(s).'
+
 
 # This allows the installer to download the appropriate translations if needed; don't
 # change it unless you know what you're doing.
