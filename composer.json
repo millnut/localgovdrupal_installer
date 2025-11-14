@@ -1,0 +1,7 @@
+{
+    "name": "millnut/localgovdrupal_installer",
+    "type": "drupal-profile",
+    "require": {
+        "drupal/recipe_installer_kit": "^1.0.0-alpha8"
+    }
+}
